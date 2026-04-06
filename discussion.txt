@@ -1,0 +1,30 @@
+Mern-Full stack
+client    -> server ->  DB
+(frontend)  (backend)  persistent store
+  UI         API logic
+client:React  JS |Angular|Vue JS
+     (Javascript|Typescript)
+     UI:HTML/CSS,Bootstrap
+server:JS(express JS)|py(Fast/flask/Django)|Java(SB)|c#|Go
+   (REST API)
+DB: RDBMS(SQL):oracle,sql,server,mysql,sqlite,postgres
+ NO SQL:Mango,Cassandra
+
+MERN - Full stack
+   client -> server -> db
+   React JS ->Express JS/Node JS ->Mango DB  
+
+MangoDB:
+  cloud Mango DB server
+  1.goto mangodb.com
+  2.sign up via email
+  3.create cluster
+    option:
+
+
+  connection string:  mongosh "mongodb+srv://cluster0.mij9j3o.mongodb.net/" --apiVersion 1 --username sahana
+ ->extract the only the connection string 
+ !Modify
+  itmongodb+srv://cluster0.mij9j3o.mongodb.net/
+
+mongodb+srv://sahana:1234@cluster0.mij9j3o.mongodb.net/

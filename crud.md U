@@ -1,0 +1,50 @@
+# CRUD ops
+  create Read Update Delete
+  Read->Query
+
+example:-trainers
+-db:trainer_app-db
+collections:
+-trainers{id,name,skills,photo}
+-admins{id,email,password,role}
+
+1.mobile management
+  mobile{id,name,model,price,photo}
+  admin
+2.patient management
+   patient{id name,gender,age,photo}
+   admin
+3.cab management
+   cars{id,model,number,type,photo}
+   admin
+
+
+   commands:
+   use trainer_app_db
+   show Databases
+   db.trainers.insertOne({"name":"sanvi","skills":"javascript","photo":""})
+   db.trainers.insertOne({"name":"sanu","skills":"python","photo":""})
+   show Databases
+   show collections
+   db.trainers.find()
+   db.trainers.find({name:"sanvi"})
+   db.trainers.updateOne({"name":"sanu"},{$set:{"skills":"#C"}})
+   db.admins.insertMany([{"email":"sanvi@gmail.com","password":"1234","role":"manager"},{"email":"dhanu@gmail.com","password":"9686","role":"agent"}])
+   db.admins.find({"email":"sanvi@gmail.com"})
+   db.admins.findOne({"email":"sanvi@gmail.com"})
+.......
+# MangoDB
+building block:document
+!JSON document(BSON)
+
+RDBMS          MangoDB
+Database       Databse !container for Database
+Table          collection
+Rows           document
+Referential    Referential and Embedded data model
+......
+
+order
+  user details +billing addres+builing details+products selected in cart==order info+line items
+  =={id,user_id,bill_amount,address,pay_mode}+|[{id,product_id,order_id,qty,price,amount}]==|
+
